@@ -11,3 +11,12 @@ var friends = ['steve', 'bob', 'susan', 'rose', 'kanye'];
 
     };
 };
+var button = document.createElement("button");
+button.innerHTML = "Click Me!";
+
+// 2. Append somewhere
+var body = document.getElementsByTagName("sing")[0];
+body.appendChild(button);
+
+// 3. Add event handler
+button.addEventListener ("click", function() {});
