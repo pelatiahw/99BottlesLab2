@@ -11,6 +11,5 @@ var friends = ['steve', 'bob', 'susan', 'rose', 'kanye'];
 
     };
 };
-function myFunction() {
-    document.getElementsByClassName("friends").innerHTML = "Hello World";
-}
+var btn = document.getElementById("Button");
+btn.addEventListener("click", sing);
