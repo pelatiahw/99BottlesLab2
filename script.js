@@ -13,14 +13,16 @@ var friends = ['steve', 'bob', 'susan', 'rose', 'kanye'];
                     div.appendChild(para);
 
               for(var j = 99; j > 0; j--) {
+                  var para = document.createElement("p");
+                  div.appendChild(para);
                     if (j < 0) {
-                        console.log(j + ' lines of code in the file,'+j+ ' lines of code;'+friends[i]+' strikes one out, clears it all out,'+j+' lines of code in the file'+j+' lines of code in the file,'+j+'lines of code;'+friends[i]+' strikes one out,clears it all out,'+j+' lines of code in the file.');
+                        para.innerHTML = j + ' lines of code in the file,'+j+ ' lines of code;'+friends[i]+' strikes one out, clears it all out,'+j+' lines of code in the file'+j+' lines of code in the file,'+j+'lines of code;'+friends[i]+' strikes one out,clears it all out,'+j+' lines of code in the file.';
                     }
                     else if (j == 2) {
-                        console.log(j +' lines of code in the file,'+j+ ' lines of code;'+friends[i]+' strikes one out, clears it all out,'+j+' lines of code in the file'+j+' lines of code in the file,'+j+'line of code;'+friends[i]+' strikes one out,clears it all out,'+j+' lines of code in the file.');
+                        para.innerHTML = j +' lines of code in the file,'+j+ ' lines of code;'+friends[i]+' strikes one out, clears it all out,'+j+' lines of code in the file'+j+' lines of code in the file,'+j+'line of code;'+friends[i]+' strikes one out,clears it all out,'+j+' lines of code in the file.';
                     }
                     else {
-                        console.log(j +' line of code in the file,'+j+ ' lines of code;'+friends[i]+' strikes one out, clears it all out,'+j+' line of code in the file'+j+' line of code in the file,'+j+'line of code;'+friends[i]+' strikes one out,clears it all out,'+j+' no more lines of code in the file.');
+                        para.innerHTML = j +' line of code in the file,'+j+ ' lines of code;'+friends[i]+' strikes one out, clears it all out,'+j+' line of code in the file'+j+' line of code in the file,'+j+'line of code;'+friends[i]+' strikes one out,clears it all out, no more lines of code in the file.';
                 }
             
         };
